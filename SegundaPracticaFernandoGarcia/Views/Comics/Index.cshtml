@@ -1,0 +1,16 @@
+﻿@model List<Comic>
+
+<h1 align="center">Lista de comics</h1>
+
+<div class="row">
+    @foreach (Comic comic in Model)
+    {
+        <div class="col-1"></div>
+        <div style="height:650px" class="col-4 my-4">
+            <img src="@comic.Imagen" height="500px" width="100%"/>
+            <h3>@comic.Nombre</h3>
+            <p>@comic.Descripcion</p>
+        </div>
+        <div class="col-1"></div>
+    }
+</div>
